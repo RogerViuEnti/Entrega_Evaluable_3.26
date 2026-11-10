@@ -11,14 +11,14 @@ int main() {
 		cifra = (cifra + 7) % 10;
 		numero[i] = cifra + '0';
 	}
-	// 2. Intercambiar primer numero con tercero
+	//Intercambiar primer numero con tercero
 	char temporal = numero[0];
 	numero[0] = numero[2];
 	numero[2] = temporal;
-	// 3. Intercambiar segundo numero con cuarto
-	char temp2 = numero[1];
+	//Intercambiar segundo numero con cuarto
+	temporal = numero[1];
 	numero[1] = numero[3];
-	numero[3] = temp2;
+	numero[3] = temporal;
 	std::cout << "El numero cifrado es: " << numero	 << std::endl;
 	return 0;
 }
